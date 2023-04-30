@@ -1,0 +1,123 @@
+.router{
+    background-image: url("/assets/img/brimstone/bg-portscan.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: center center;
+    padding: 40px 0;
+
+
+    .connector {
+        width: 120px;
+        height: 120px;
+        cursor: grab;
+        background-size: 100% 100%;
+
+        &.c-one{
+            background-image: url("/assets/img/brimstone/connector-1.png");
+        }
+        &.c-two{
+            background-image: url("/assets/img/brimstone/connector-2.png");
+        }
+        &.c-three{
+            background-image: url("/assets/img/brimstone/connector-3.png");
+        }
+        &.c-four{
+            background-image: url("/assets/img/brimstone/connector-4.png");
+        }
+        &.c-five{
+            background-image: url("/assets/img/brimstone/connector-5.png");
+        }
+        &.c-six{
+            background-image: url("/assets/img/brimstone/connector-6.png");
+        }
+        &.c-seven{
+            background-image: url("/assets/img/brimstone/connector-7.png");
+        }
+        &.c-eight{
+            background-image: url("/assets/img/brimstone/connector-8.png");
+        }
+        &.c-nine{
+            background-image: url("/assets/img/brimstone/connector-9.png");
+        }
+        &.c-ten{
+            background-image: url("/assets/img/brimstone/connector-10.png");
+        }
+    }
+
+.port-header{
+    padding: 0 20px;
+}
+
+    .server-select{
+        display: flex;
+        justify-content: space-between;
+
+        select{
+            width: 100%;
+            background: #262626;
+            color: #fff;
+            padding: 11px;
+        }
+
+        .connection{
+            width: 70px;
+            color: #fff;
+            text-align: center;
+            padding: 13px 0;
+        }
+    }
+
+    .connector-slots{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 21px;
+    }
+
+    .connector-slot {
+        width: 120px;
+        height: 120px;
+        background-image: url("/assets/img/brimstone/connector-placeholder.png");
+        background-size: 100% 100%;
+
+        &.alderbrook{
+            background-image: url("/assets/img/brimstone/connector-alderbrook.png");
+        }
+        &.novacon{
+            background-image: url("/assets/img/brimstone/connector-novacon.png");
+        }
+    }
+
+    .connectors{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 50px;
+        border: 2px solid #4d4d4d;
+        margin: 23px;
+    }
+}
+
+
+.portscanner{
+    background: #000;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ip-input{
+        display: flex;
+        color: #fff;
+        gap: 7px;
+    }
+
+    .connect{
+        background: #fff;
+        padding: 6px 20px;
+        margin-left: 6px;
+        text-decoration: none;
+        color: #000;
+    }
+}

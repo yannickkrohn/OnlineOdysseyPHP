@@ -1,0 +1,46 @@
+.console{
+    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+    font-size: 11pt;
+    background: #000;
+    height: 410px;
+    color: #fff;
+    padding: 30px;
+    overflow: auto;
+
+    .green{
+        color: #72bd27;
+    }
+    .blue{
+        color: #5e8cb6;
+    }
+    .pink{
+        color: #ff8297;
+    }
+
+    .typed-cursor {
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+}
+
+.console-window{
+    left: 40%;
+}

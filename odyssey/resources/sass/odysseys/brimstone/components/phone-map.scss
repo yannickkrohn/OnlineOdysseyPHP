@@ -1,0 +1,70 @@
+
+.map-img{
+    position: relative;
+}
+
+#canvasDiv canvas {
+    border: 1px solid black;
+}
+
+#canvasDiv {
+    overflow: hidden;
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: crosshair;
+}
+
+#wrapper {
+    margin: 10px;
+}
+
+#button-bar {
+    position: absolute;
+    bottom: 30px;
+    gap: 10px;
+    flex-direction: column;
+    right: 10px;
+    display: flex;
+    margin-left: 24px;
+}
+
+.color,
+.clear-drawing {
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px 6px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+}
+.color-red {
+    background-color: #DC3333;
+}
+.color-blue {
+    background-color: #3393DC;
+}
+.color-green {
+    background-color: #2DB93B;
+}
+.color-yellow {
+    background-color: #E3EF3E;
+}
+
+.map-drawing{
+    width: 1200px;
+    margin: auto;
+}

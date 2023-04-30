@@ -1,0 +1,179 @@
+
+body,
+body * {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #000;
+}
+
+
+@import "../../startup-overlay";
+@import "../../lobby";
+@import "../../buttons";
+@import "../../loading-screen";
+@import "../../game-controller";
+
+@import "components/phone-map";
+@import "components/desktop";
+@import "components/windows";
+@import "components/console";
+@import "components/cloud-login";
+@import "components/chat";
+@import "components/fileserver";
+@import "components/drone-pilot";
+@import "components/mail-login";
+@import "components/portscanner";
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.game-starter{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.game-mission {
+    position: fixed;
+    width: 510px;
+    left: 50%;
+    z-index: 99999;
+    margin-left: -205px;
+    margin-top: -10px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 0 54px 1px rgb(0 0 0 / 40%);
+    background-image: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.5s;
+    animation: float 2s ease-in-out infinite;
+    overflow: hidden;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+
+    .mission-progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+        right: 0;
+
+        .mission-progress-bar {
+            height: 15px;
+            background: #fff;
+            color: #fff;
+            display: inline-block;
+            transition: 0.5s;
+        }
+    }
+
+    select {
+        border: none;
+        height: 40px;
+        width: 40px;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #fff;
+    }
+
+
+    a {
+        background: #fff;
+        color: #ff6467;
+        height: 40px;
+        display: inline-block;
+        margin: 0;
+        border-radius: 3px;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            color: #5785d2;
+        }
+    }
+
+    .coordinates-wrapper {
+        display: inline-block;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        margin-top: 14px;
+    }
+
+    .mission-submitter {
+        .mission-icon {
+            position: absolute;
+            left: 20px;
+            top: 38px;
+            color: #ffffff70;
+            font-size: 58px;
+        }
+    }
+}
+
+
+video {
+    top: 0;
+    bottom: 0;
+}
+
+
+.cutscene {
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+#game-wrapper {
+    background-color: #000;
+    min-height: 100%;
+    transition: 0.5s filter;
+
+    &.blur{
+        filter: blur(8px);
+    }
+}
+
+
+.loading-bar{
+    width: 800px;
+    background: #343434;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -9vw;
+    left: 50%;
+    margin-left: -400px;
+    overflow: hidden;
+
+    .loading-progress{
+        background: linear-gradient(120deg, #d32859, #0f2fd9);
+        height: 100%;
+        width: 0%;
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,119 @@
+.desktop{
+    height: 100vh;
+    background: lightseagreen;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/assets/img/brimstone/wallpaper.jpg");
+    padding-top: 40px;
+}
+
+.menu-bar{
+    height: 40px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 0 22px;
+}
+
+.right-actions{
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.menu-logo{
+    font-size: 23px;
+    margin: 9px;
+
+    svg{
+        width: 30px;
+    }
+}
+
+
+.bottom-nav{
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    background: #00000059;
+    color: #fff;
+
+    .apps{
+        display: flex;
+    }
+}
+
+
+#radio-controls {
+    display: flex;
+    align-items: center;
+}
+
+#play-button, #pause-button {
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+    border: none;
+    background-color: #00000063;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: #15ab69;
+    }
+}
+
+#volume-slider {
+    width: 200px;
+}
+
+
+.marquee {
+    height: 25px;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin: 0 11px;
+}
+
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 30px;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}

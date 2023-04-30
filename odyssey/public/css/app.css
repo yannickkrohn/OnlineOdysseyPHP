@@ -1,0 +1,170 @@
+.loggedin {
+  background: #101827;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.logo {
+  width: 270px;
+}
+
+tbody tr {
+  border-color: rgba(255, 255, 255, 0.1882352941);
+}
+
+table > thead {
+  border-color: transparent;
+}
+
+.text-bg-warning {
+  background-color: RGBA(255, 193, 7, var(--bs-bg-opacity, 1)) !important;
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77);
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn-primary {
+  border: 1px solid transparent;
+  transition: 0.5s;
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background-size: 600%;
+  animation: anime 16s linear;
+}
+.btn-primary:hover {
+  border-color: rgba(255, 255, 255, 0.68);
+}
+
+.tickets {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+}
+
+.ticket {
+  width: 400px;
+  height: 775px;
+  background-color: white;
+  position: relative;
+  color: #000;
+}
+.ticket img {
+  max-width: 100%;
+  height: auto;
+}
+.ticket .holes-top {
+  height: 50px;
+  width: 50px;
+  background-color: #101827;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: -25px;
+}
+.ticket .holes-top:before, .ticket .holes-top:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: #101827;
+  position: absolute;
+  border-radius: 50%;
+}
+.ticket .holes-top:before {
+  left: -200px;
+}
+.ticket .holes-top:after {
+  left: 200px;
+}
+.ticket .holes-lower {
+  position: relative;
+  margin: 25px;
+  border: 1px dashed #aaa;
+}
+.ticket .holes-lower:before, .ticket .holes-lower:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: #101827;
+  position: absolute;
+  border-radius: 50%;
+}
+.ticket .holes-lower:before {
+  top: -25px;
+  left: -50px;
+}
+.ticket .holes-lower:after {
+  top: -25px;
+  left: 350px;
+}
+.ticket .title {
+  padding: 50px 25px 10px;
+}
+.ticket .cinema {
+  color: #aaa;
+  font-size: 22px;
+}
+.ticket .btn-primary {
+  width: 100%;
+  border-radius: 0;
+}
+.ticket .movie-title {
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(-45deg, #ffa63d, #ff3d77);
+}
+.ticket .info {
+  padding: 15px 25px;
+}
+.ticket table {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.ticket table tr {
+  margin-bottom: 10px;
+}
+.ticket table th {
+  text-align: left;
+}
+.ticket table th:nth-of-type(1) {
+  width: 38%;
+}
+.ticket table th:nth-of-type(2) {
+  width: 40%;
+}
+.ticket table th:nth-of-type(3) {
+  width: 15%;
+}
+.ticket table td {
+  width: 33%;
+  font-size: 17px;
+}
+.ticket .bigger {
+  font-size: 48px;
+}
+.ticket .serial {
+  padding: 25px;
+}
+.ticket .serial table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.ticket .serial td {
+  width: 3px;
+  height: 50px;
+}
+.ticket .numbers td {
+  font-size: 16px;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>loading <span class="preload-amount"></span></h1>
+
+    </body>
+    <script src="https://code.createjs.com/preloadjs-0.6.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        var queue = new createjs.LoadQueue(true);
+
+
+
+        queue.loadManifest([{
+            id : 'mp4',
+            src : 'https://voolatech.github.io/banner/vpaid/videos/video.mp4',     type : createjs.AbstractLoader.BINARY
+        }]);
+
+        queue.load();
+
+        queue.on("complete", function(){
+
+            var src = queue.getResult("mp4");
+
+            var blob = new Blob( [ src ], { type: "video/mp4" } );
+            var urlCreator = window.URL || window.webkitURL;
+            var objUrl = urlCreator.createObjectURL( blob );
+            console.log(objUrl);
+
+        });
+
+        queue.on("progress", function(evt){
+
+        });
+
+
+    </script>
+</html>

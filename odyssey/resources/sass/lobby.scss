@@ -1,0 +1,136 @@
+.lobby {
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+
+    .game-meta {
+        width: 100%;
+
+        text-align: center;
+        margin: 5vh;
+        align-self: baseline;
+    }
+
+    .lobby-prepare-steps {
+        padding-top: 10px;
+    }
+
+    .lobby-prepare-steps ul {
+        list-style: none;
+        margin: 27px 0;
+        padding: 0;
+
+        li {
+            padding: 10px 0;
+            display: none;
+
+            i {
+                font-size: 29px;
+                width: 60px;
+                text-align: center;
+                vertical-align: text-bottom;
+                transform: translateY(3px);
+            }
+        }
+    }
+
+    .lobby-players {
+        animation: float 3s ease-in-out infinite;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .participants {
+        width: 550px;
+        padding: 40px;
+        border-radius: 12px;
+        list-style: none;
+        background-color: #0000005e;
+        text-align: left;
+
+        li {
+            border-bottom: 1px solid #ffffff30;
+            padding: 17px;
+        }
+    }
+
+    .option-wrapper {
+        display: flex;
+    }
+}
+
+
+.lobby-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.player-name-popup{
+    background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+    background-size: 600%;
+    animation: anime 16s linear infinite;
+    color: #fff;
+    flex-direction: column;
+
+    input{
+        width: 19vw;
+        height: 2vw;
+        border: none;
+        margin: 15px;
+        font-size: 2vw;
+        color: black;
+        text-align: center;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    button{
+        width: 19vw;
+        height: 56px;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1vw;
+        letter-spacing: 3px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+    }
+}

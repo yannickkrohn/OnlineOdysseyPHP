@@ -1,0 +1,223 @@
+.loggedin {
+    background: #101827;
+    min-height: 100vh;
+    color: #fff;
+
+}
+
+.logo {
+    width: 270px;
+}
+
+tbody tr {
+    border-color: #ffffff30;
+}
+
+table > thead {
+    border-color: transparent;
+}
+
+.text-bg-warning {
+    background-color: RGBA(255, 193, 7, var(--bs-bg-opacity, 1)) !important;
+    background: linear-gradient(-45deg, #ffa63d, #ff3d77);
+}
+
+@-webkit-keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-primary {
+    border: 1px solid transparent;
+    transition: 0.5s;
+    background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+    background-size: 600%;
+    animation: anime 16s linear;
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.68);
+    }
+}
+
+
+$background-color: #101827;
+$width: 400;
+$circle-size: 50;
+
+.tickets{
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
+
+.ticket {
+    width: $width + px;
+    height: 775px;
+    background-color: white;
+    position: relative;
+    color: #000;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .holes-top {
+        height: $circle-size + px;
+        width: $circle-size + px;
+        background-color: $background-color;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        margin-left: ($circle-size / -2) + px;
+        top: ($circle-size / -2) + px;
+
+        &:before,
+        &:after {
+            content: '';
+            height: $circle-size + px;
+            width: $circle-size + px;
+            background-color: $background-color;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        &:before {
+            left: ($width / -2) + px;
+        }
+
+        &:after {
+            left: ($width / 2) + px;
+        }
+    }
+
+    .holes-lower {
+        position: relative;
+        margin: 25px;
+        border: 1px dashed #aaa;
+
+        &:before,
+        &:after {
+            content: '';
+            height: $circle-size + px;
+            width: $circle-size + px;
+            background-color: $background-color;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        &:before {
+            top: -25px;
+            left: ($circle-size / -1) + px;
+        }
+
+        &:after {
+            top: -25px;
+            left: ($width - $circle-size) + px;
+        }
+    }
+
+    .title {
+        padding: 50px 25px 10px;
+    }
+
+    .cinema {
+        color: #aaa;
+        font-size: 22px;
+    }
+
+    .btn-primary{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .movie-title {
+        font-size: 30px;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(-45deg, #ffa63d, #ff3d77);
+}
+
+.info {
+    padding: 15px 25px;
+}
+
+table {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    th {
+        text-align: left;
+
+        &:nth-of-type(1) {
+            width: 38%;
+        }
+
+        &:nth-of-type(2) {
+            width: 40%;
+        }
+
+        &:nth-of-type(3) {
+            width: 15%;
+        }
+    }
+
+    td {
+        width: 33%;
+        font-size: 17px;
+    }
+}
+
+.bigger {
+    font-size: 48px;
+}
+
+.serial {
+    padding: 25px;
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    td {
+        width: 3px;
+        height: 50px;
+    }
+}
+
+.numbers {
+    td {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+}
